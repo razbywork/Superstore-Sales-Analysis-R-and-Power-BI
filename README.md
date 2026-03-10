@@ -114,7 +114,7 @@ A key business question is how discounts affect profitability.
 
 ### Visualization
 
-![Discount vs Profit](Plots/Discount_Profit_Relationship.png)
+![Discount vs Profit](Plots/Relationship_between_Discount_and_Profit.png)
 
 The scatter plot clearly shows that **higher discounts tend to produce negative profits**, indicating potential over-discounting.
 
