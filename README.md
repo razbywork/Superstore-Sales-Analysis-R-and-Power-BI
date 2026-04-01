@@ -165,7 +165,7 @@ An interactive dashboard was built to visualize key business metrics.
 
 ### Dashboard Preview
 
-![Dashboard](Dashboard/Dashboard.pdf)
+![Dashboard](Dashboard/Dashboard.png)
 
 ---
 
