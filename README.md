@@ -1,18 +1,18 @@
-# 📊 Superstore Sales Analysis (R)
+# 📊 Superstore Sales Analysis (R + Power BI)
 
 ## 📌 Project Overview
 This project analyzes a retail dataset containing sales transactions from a fictional Superstore in the United States.  
-The goal of the analysis is to explore **sales performance, profitability drivers, and customer behavior** using **R and the tidyverse ecosystem**.
+The goal of the analysis is to explore **sales performance, profitability drivers, and customer behavior** using **R for data analysis** and **Power BI for interactive dashboard visualization**.
 
-The analysis includes:
+The project includes:
 
-- Data cleaning and preparation
+- Data cleaning and preparation in R
 - Exploratory Data Analysis (EDA)
-- Data visualization
-- Profitability analysis
-- Customer and product insights
+- Statistical and visual insights
+- Business-oriented conclusions
+- Interactive Power BI dashboard
 
-This project demonstrates practical **data analysis skills using R**, including **data manipulation, aggregation, and visualization**.
+This project demonstrates an **end-to-end data analytics workflow**, from raw data exploration to a business-ready dashboard.
 
 ---
 
@@ -28,15 +28,17 @@ The dataset contains **9,994 sales transactions** and **21 variables**, includin
 
 ---
 
-# 🛠 Tools & Libraries
+# 🛠 Tools & Technologies
 
-The project was built using:
+### Data Analysis
+- R
+- tidyverse
+- ggplot2
+- dplyr
+- lubridate
 
-- **R**
-- **tidyverse**
-- **ggplot2**
-- **dplyr**
-- **lubridate**
+### Dashboard & Visualization
+- Power BI Desktop
 
 ---
 
@@ -47,6 +49,7 @@ Before analysis, several preprocessing steps were performed:
 - Converted `Order.Date` and `Ship.Date` into Date format
 - Checked for missing values
 - Verified dataset structure
+- Created time-based aggregations (Year, Month)
 
 ✅ No missing values were found in the dataset.
 
@@ -64,20 +67,13 @@ The dataset contains three main product categories:
 
 ### Key Findings
 
-- **Technology generates the highest total sales and profit.**
-- **Office Supplies produces strong profits despite slightly lower sales.**
-- **Furniture generates high sales but relatively low profit.**
+- **Technology generates the highest total sales and profit**
+- **Office Supplies produces strong profits despite lower sales**
+- **Furniture generates high sales but low profitability**
 
-This suggests **lower profit margins in the Furniture category**.
-
-### Visualization
+This suggests **lower profit margins in Furniture**.
 
 ![Sales by Category](Plots/Sales_by_Category.png)
-
-The boxplot shows:
-
-- Technology has the **largest sales outliers**, indicating high-value purchases.
-- Furniture and Office Supplies have **lower typical transaction sizes**.
 
 ---
 
@@ -88,35 +84,29 @@ Profitability varies significantly across regions.
 ### Findings
 
 | Region | Profit Ranking |
-|------|------|
-| West | Highest |
-| East | Second |
-| South | Moderate |
-| Central | Lowest |
-
-### Visualization
+|--------|----------------|
+| West   | Highest |
+| East   | Second |
+| South  | Moderate |
+| Central| Lowest |
 
 ![Profit by Region](Plots/Profit_by_Region.png)
 
-The **West region leads in profitability**, suggesting stronger market performance or better pricing strategy.
+The **West region leads in profitability**, indicating stronger market performance.
 
 ---
 
 # 💸 Discount Impact on Profit
 
-A key business question is how discounts affect profitability.
-
 ### Findings
 
-- Small discounts (0–10%) still produce positive profits.
-- Discounts **above ~30% consistently generate losses**.
-- Large discounts correlate strongly with **negative profit transactions**.
-
-### Visualization
+- Small discounts (0–10%) remain profitable
+- Discounts above ~30% generate losses
+- Strong negative correlation between discount and profit
 
 ![Discount vs Profit](Plots/Relationship_between_Discount_and_Profit.png)
 
-The scatter plot clearly shows that **higher discounts tend to produce negative profits**, indicating potential over-discounting.
+This indicates **over-discounting reduces profitability**.
 
 ---
 
@@ -124,12 +114,8 @@ The scatter plot clearly shows that **higher discounts tend to produce negative 
 
 ### Findings
 
-- Sales slightly decreased between **2014 and 2015**
-- Sales increased significantly between **2015 and 2017**
-
-This suggests strong **business growth in later years**.
-
-### Visualization
+- Slight decrease between 2014–2015
+- Strong growth from 2015–2017
 
 ![Sales Over Time](Plots/Sales_Over_Time.png)
 
@@ -138,9 +124,6 @@ This suggests strong **business growth in later years**.
 # 🏆 Product Profitability Analysis
 
 ### Most Profitable Products
-
-Top profitable products include:
-
 - Canon imageCLASS 2200 Advanced Copier
 - Fellowes PB500 Binding Machine
 - HP LaserJet 3310 Copier
@@ -151,69 +134,62 @@ These products likely have **high margins and strong demand**.
 ---
 
 ### Least Profitable Products
-
-Products generating the largest losses include:
-
 - Cubify CubeX 3D Printer
 - Lexmark MX611dhe Laser Printer
 - Conference Tables
 - Binding Systems
 
 Possible reasons:
-
-- Excessive discounting
-- High product costs
+- Heavy discounting
+- High cost structure
 - Low demand
 
 ---
 
-# 👥 Customer Profitability
+# 📊 Power BI Dashboard
 
-The most profitable customers include:
+An interactive dashboard was built to visualize key business metrics.
 
-- Tamara Chand
-- Raymond Buch
-- Sanjit Chand
-- Hunter Lopez
+### Dashboard Features
 
-Identifying high-value customers can support:
+- KPI Cards (Total Sales, Profit, Orders, Profit Margin)
+- Sales Trend Over Time
+- Sales by Category
+- Sales by State (Map)
+- Sales by Segment
+- Sales by Sub-Category
+- Discount vs Profit Scatter Analysis
+- Profit Margin by Category
+- Sales by Ship Mode
+- Top Products by Sales
 
-- Customer retention strategies
-- Targeted marketing campaigns
-- Loyalty programs
+### Dashboard Preview
+
+![Dashboard](Plots/PowerBI_Dashboard.pdf)
 
 ---
 
 # 📌 Key Business Insights
 
-The analysis reveals several important insights:
-
-1️⃣ **Technology products drive the highest profits**
-
-2️⃣ **Furniture has weaker profitability despite high sales**
-
-3️⃣ **Large discounts strongly reduce profitability**
-
-4️⃣ **The West region generates the highest total profit**
-
-5️⃣ **Sales increased significantly after 2015**
-
-These findings suggest opportunities to:
-
-- Optimize discount strategies
-- Focus on profitable product categories
-- Target high-value customers
+1️⃣ Technology products drive the highest profits  
+2️⃣ Furniture has weak profitability despite high sales  
+3️⃣ Large discounts strongly reduce profitability  
+4️⃣ West region generates the highest total profit  
+5️⃣ Sales increased significantly after 2015  
+6️⃣ Standard shipping dominates total sales  
+7️⃣ Consumer segment generates most revenue  
 
 ---
 
 # 🚀 Future Improvements
 
-Possible extensions for this project include:
+Possible extensions:
 
-- Profit prediction using regression models
-- Customer segmentation
-- Product recommendation analysis
-- Interactive dashboards using **Shiny or Tableau**
+- Profit prediction model
+- Customer segmentation (clustering)
+- Time-series forecasting
+- Interactive slicers and filters
+- Deployment to Power BI Service
 
 ---
 
@@ -222,9 +198,11 @@ Possible extensions for this project include:
 **Raz Ben-Yehuda**  
 B.Sc. Industrial Engineering & Management  
 
-Skills demonstrated in this project:
+### Skills Demonstrated
 
-- Data analysis with **R**
-- Exploratory data analysis
-- Data visualization
-- Business insight generation
+- Data analysis with R  
+- Exploratory data analysis  
+- Data visualization  
+- Power BI dashboard design  
+- Business insight generation  
+- Data storytelling
