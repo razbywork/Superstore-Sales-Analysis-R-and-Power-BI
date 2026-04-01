@@ -165,7 +165,7 @@ An interactive dashboard was built to visualize key business metrics.
 
 ### Dashboard Preview
 
-![Dashboard](Plots/PowerBI_Dashboard.pdf)
+![Dashboard](Dashboard/PowerBI_Dashboard.pdf)
 
 ---
 
