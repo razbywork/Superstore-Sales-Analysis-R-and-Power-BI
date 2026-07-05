@@ -28,6 +28,11 @@ The dataset contains **9,994 sales transactions** and **21 variables**, includin
 
 ---
 
+## 🌐 Link to Dataset
+https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+
+---
+
 # 🛠 Tools & Technologies
 
 ### Data Analysis
