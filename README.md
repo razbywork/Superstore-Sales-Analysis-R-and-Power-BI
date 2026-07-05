@@ -181,18 +181,6 @@ An interactive dashboard was built to visualize key business metrics.
 
 ---
 
-# 🚀 Future Improvements
-
-Possible extensions:
-
-- Profit prediction model
-- Customer segmentation (clustering)
-- Time-series forecasting
-- Interactive slicers and filters
-- Deployment to Power BI Service
-
----
-
 # 👨‍💻 Author
 
 **Raz Ben-Yehuda**  
